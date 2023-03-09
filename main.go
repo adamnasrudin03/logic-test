@@ -2,10 +2,13 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	"log"
+	"math/rand"
 
 	"github.com/adamnasrudin03/logic-test/game"
 	"github.com/adamnasrudin03/logic-test/geometri"
+	"github.com/adamnasrudin03/logic-test/other"
 )
 
 func main() {
@@ -13,6 +16,7 @@ func main() {
 	var players = flag.Int("players", 3, " The number of players in the dice game ")
 	var dices = flag.Int("dices", 4, " The number of dice in the dice game ")
 	var total = flag.Int("total", 3, " The number of arrays and their contents")
+	var totalTree = flag.Int("totalTree", 5, " The number of total tree")
 
 	flag.Parse()
 
@@ -28,6 +32,21 @@ func main() {
 
 		log.Println("Logic calculate square diagonal it's running.")
 		geometri.CalculateSquareDiagonal(*total)
+	case "trees-and-the-sun":
+		log.Println("Logic count trees and the sun it's running.")
+		var trees = []int{}
+		var numbers = []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+		// make up the whole height of the tree
+		for i := 0; i < *totalTree; i++ {
+			randomIndex := rand.Intn(len(numbers))
+			pick := numbers[randomIndex]
+			trees = append(trees, pick)
+		}
+
+		fmt.Println("Trees: ", trees)
+		countTree := other.TreesAndTheSun(trees, *totalTree)
+		fmt.Println(countTree)
 	default:
 		log.Println("Please enter the appropriate program type!")
 

@@ -34,3 +34,17 @@ is a collection of programs in the test logic
       - type the type of program to be run
       - total is the number of arrays and their contents
 
+
+
+
+- ## Trees And The Sun
+    ![question trees and the sun](./img/trees-and-the-sun.png)
+
+    ### Running trees and the sun
+    ```bash
+        go run main.go -type=trees-and-the-sun -totalTree=5
+    ```
+
+     ### Information:
+      - type the type of program to be run
+      - totalTree is the number of total tree

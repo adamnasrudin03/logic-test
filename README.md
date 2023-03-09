@@ -3,6 +3,11 @@
 
 is a collection of programs in the test logic
 
+# List Program
+1. [ Dice Game ](#dice-game)
+2. [ Calculate Square Diagonal ](#calculate-square-diagonal)
+3. [ Trees And The Sun ](#trees-and-the-sun)
+   
 # Running Porgram
 
 ```bash

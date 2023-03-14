@@ -47,6 +47,11 @@ func main() {
 		fmt.Println("Trees: ", trees)
 		countTree := other.TreesAndTheSun(trees, *totalTree)
 		fmt.Println(countTree)
+	case "min-swap-array":
+		log.Println("Logic count minimum swap array it's running.")
+		var arr = []int{4, 3, 1, 2}
+		count := other.MinSwapArray(arr)
+		fmt.Println(count)
 	default:
 		log.Println("Please enter the appropriate program type!")
 

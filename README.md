@@ -7,6 +7,7 @@ is a collection of programs in the test logic
 1. [ Dice Game ](#dice-game)
 2. [ Calculate Square Diagonal ](#calculate-square-diagonal)
 3. [ Trees And The Sun ](#trees-and-the-sun)
+4. [ Min Swap Array ](#min-swap-array)
    
 # Running Porgram
 
@@ -55,6 +56,18 @@ is a collection of programs in the test logic
       - totalTree is the number of total tree
   
 
+
+- ## Min Swap Array
+    ![question Min Swap Array 1](./img/min-swap-array-1.png)
+    ![question Min Swap Array 2](./img/min-swap-array-2.png)
+
+    ### Running Min Swap Array
+    ```bash
+        go run main.go -type=min-swap-array
+    ```
+
+     ### Information:
+      - type the type of program to be run
 
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/adamnasrudin03)

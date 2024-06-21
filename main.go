@@ -12,11 +12,14 @@ import (
 )
 
 func main() {
-	var typeProgram = flag.String("type", "dice-game", " The type of program to be run ")
-	var players = flag.Int("players", 3, " The number of players in the dice game ")
-	var dices = flag.Int("dices", 4, " The number of dice in the dice game ")
-	var total = flag.Int("total", 3, " The number of arrays and their contents")
-	var totalTree = flag.Int("totalTree", 5, " The number of total tree")
+	var (
+		typeProgram = flag.String("type", "dice-game", " The type of program to be run ")
+		players     = flag.Int("players", 3, " The number of players in the dice game ")
+		dices       = flag.Int("dices", 4, " The number of dice in the dice game ")
+		total       = flag.Int("total", 3, " The number of arrays and their contents")
+		totalTree   = flag.Int("totalTree", 5, " The number of total tree")
+		n           = flag.Int("n", 6, " The number of pyramid their contents")
+	)
 
 	flag.Parse()
 
@@ -52,6 +55,9 @@ func main() {
 		var arr = []int{4, 3, 1, 2}
 		count := other.MinSwapArray(arr)
 		fmt.Println(count)
+	case "pyramid":
+		other.PyramidPattern(*n)
+
 	default:
 		log.Println("Please enter the appropriate program type!")
 

@@ -57,6 +57,9 @@ func main() {
 		fmt.Println(count)
 	case "pyramid":
 		other.PyramidPattern(*n)
+	case "fibonacci":
+		fib := other.Fibonacci(*n)
+		fmt.Println(fib)
 
 	default:
 		log.Println("Please enter the appropriate program type!")
